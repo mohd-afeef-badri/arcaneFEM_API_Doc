@@ -26,9 +26,7 @@ git submodule update --remote
 ### to create ###
 
 ```bash
-cd arcanefem/docs && \
 	doxygen -w html ./docs/header.html ./docs/delete_me.html ./docs/delete_me.css && \
-	doxygen webdoc.doxyfile.in && \
-	cd -
+	doxygen webdoc.doxyfile.in
 ```
 
