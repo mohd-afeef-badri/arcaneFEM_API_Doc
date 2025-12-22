@@ -27,7 +27,7 @@ git submodule update --remote
 
 ```bash
 cd arcanefem/docs && \
-	doxygen -w html ./../../apidoc/header.html ./../../apidoc/delete_me.html ./../../apidoc/delete_me.css && \
+	doxygen -w html ./../../docs/header.html ./../../docs/delete_me.html ./../../docs/delete_me.css && \
 	doxygen webdoc.doxyfile.in && \
 	cd -
 ```
