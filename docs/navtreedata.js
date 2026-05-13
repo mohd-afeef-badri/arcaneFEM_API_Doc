@@ -51,9 +51,9 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "AlephDoFLinearSystem_8cc_source.html",
-"classArcane_1_1FemUtils_1_1IDoFLinearSystemFactory.html",
-"classFemModuleLaplace.html#a223096a70ac07f4a0f2e275535c70639",
-"structTypesElastodynamic.html#abcf01d567e1df7b8de9f28ab3b0f6d88af68aee404d8bdb9def30f872b602f626"
+"classArcane_1_1FemUtils_1_1GaussDoFsOnCells.html",
+"classFemModuleFourier.html#a8a0fcaa7d27743727aa387bcee38f53e",
+"functions_v.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

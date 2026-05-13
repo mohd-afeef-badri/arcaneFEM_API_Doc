@@ -137,6 +137,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af8de4df6526ea1669d0bf2797e53176b" id="r_af8de4df6526ea1669d0bf2797e53176b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#af8de4df6526ea1669d0bf2797e53176b">_assembleLinearOperatorGpu</a> ()</td></tr>
 <tr class="memdesc:af8de4df6526ea1669d0bf2797e53176b"><td class="mdescLeft">&#160;</td><td class="mdescRight">FEM linear operator for the current simulation step. GPU compatible. Currently working with HypreDoFLinearSystem.  <br /></td></tr>
 <tr class="separator:af8de4df6526ea1669d0bf2797e53176b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b47a74e62789d580da2a80fd4c44977" id="r_a3b47a74e62789d580da2a80fd4c44977"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#a3b47a74e62789d580da2a80fd4c44977">FemModulePoisson</a> (<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">const</a> <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">ModuleBuildInfo</a> &amp;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">mbi</a>)</td></tr>
+<tr class="separator:a3b47a74e62789d580da2a80fd4c44977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a40032ccbee596b760c2a302799450" id="r_a78a40032ccbee596b760c2a302799450"><td class="memItemLeft" align="right" valign="top"><a id="a78a40032ccbee596b760c2a302799450" name="a78a40032ccbee596b760c2a302799450"></a>
+<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>startInit</b> () <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">override</a></td></tr>
+<tr class="separator:a78a40032ccbee596b760c2a302799450"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a044148fb14bd4cc124ba751b11fea973" id="r_a044148fb14bd4cc124ba751b11fea973"><td class="memItemLeft" align="right" valign="top"><a id="a044148fb14bd4cc124ba751b11fea973" name="a044148fb14bd4cc124ba751b11fea973"></a>
+<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>compute</b> () <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">override</a></td></tr>
+<tr class="memdesc:a044148fb14bd4cc124ba751b11fea973"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method called at the beginning of the simulation. <br /></td></tr>
+<tr class="separator:a044148fb14bd4cc124ba751b11fea973"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c55266b56ae5ed563c88e13ce6e870" id="r_a12c55266b56ae5ed563c88e13ce6e870"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">VersionInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#a12c55266b56ae5ed563c88e13ce6e870">versionInfo</a> () <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">const</a> <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">override</a></td></tr>
+<tr class="memdesc:a12c55266b56ae5ed563c88e13ce6e870"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method called at each iteration.  <br /></td></tr>
+<tr class="separator:a12c55266b56ae5ed563c88e13ce6e870"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abebde0793ed126cb14881d9e629bf9a3" id="r_abebde0793ed126cb14881d9e629bf9a3"><td class="memItemLeft" align="right" valign="top"><a id="abebde0793ed126cb14881d9e629bf9a3" name="abebde0793ed126cb14881d9e629bf9a3"></a>
+<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_assembleBilinearOperator</b> ()</td></tr>
+<tr class="separator:abebde0793ed126cb14881d9e629bf9a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -177,6 +192,27 @@ Private Member Functions</h2></td></tr>
 <tr class="memitem:af45bca1390e76977fc925a64f6139e8d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#af45bca1390e76977fc925a64f6139e8d">_assembleBilinear</a> (<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">const</a> std::function&lt; <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">RealMatrix</a>&lt; <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">N</a>, <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">N</a> &gt;(<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">const</a> <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">Cell</a> &amp;)&gt; &amp;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">compute_element_matrix</a>)</td></tr>
 <tr class="memdesc:af45bca1390e76977fc925a64f6139e8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assembles the bilinear operator matrix for the FEM linear system.  <br /></td></tr>
 <tr class="separator:af45bca1390e76977fc925a64f6139e8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff70fb3c910e715daf9b6f4d404c6857" id="r_aff70fb3c910e715daf9b6f4d404c6857"><td class="memItemLeft" align="right" valign="top"><a id="aff70fb3c910e715daf9b6f4d404c6857" name="aff70fb3c910e715daf9b6f4d404c6857"></a>
+<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_doStationarySolve</b> ()</td></tr>
+<tr class="separator:aff70fb3c910e715daf9b6f4d404c6857"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4e499907c3e8f091916b43813f1da68" id="r_ae4e499907c3e8f091916b43813f1da68"><td class="memItemLeft" align="right" valign="top"><a id="ae4e499907c3e8f091916b43813f1da68" name="ae4e499907c3e8f091916b43813f1da68"></a>
+<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_getMaterialParameters</b> ()</td></tr>
+<tr class="separator:ae4e499907c3e8f091916b43813f1da68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a7230e28544650e1f581298d47b7c9" id="r_a51a7230e28544650e1f581298d47b7c9"><td class="memItemLeft" align="right" valign="top"><a id="a51a7230e28544650e1f581298d47b7c9" name="a51a7230e28544650e1f581298d47b7c9"></a>
+<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_solve</b> ()</td></tr>
+<tr class="separator:a51a7230e28544650e1f581298d47b7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add7a1ed3aa237642211f38af72e75652" id="r_add7a1ed3aa237642211f38af72e75652"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#add7a1ed3aa237642211f38af72e75652">_assembleLinearSystem</a> ()</td></tr>
+<tr class="memdesc:add7a1ed3aa237642211f38af72e75652"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assembles the FEM linear system (matrix and RHS) for the Poisson problem using DG formulation.  <br /></td></tr>
+<tr class="separator:add7a1ed3aa237642211f38af72e75652"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad70ee380daa996ef87ae7bdd2fa33d7" id="r_aad70ee380daa996ef87ae7bdd2fa33d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#aad70ee380daa996ef87ae7bdd2fa33d7">_buildCsrSparsity</a> ()</td></tr>
+<tr class="memdesc:aad70ee380daa996ef87ae7bdd2fa33d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the CSR sparsity pattern for the DG matrix.  <br /></td></tr>
+<tr class="separator:aad70ee380daa996ef87ae7bdd2fa33d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addc60439215377f53c82ea72d934942f" id="r_addc60439215377f53c82ea72d934942f"><td class="memItemLeft" align="right" valign="top"><a id="addc60439215377f53c82ea72d934942f" name="addc60439215377f53c82ea72d934942f"></a>
+<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_updateVariables</b> ()</td></tr>
+<tr class="separator:addc60439215377f53c82ea72d934942f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed5288366e051b040533a08dc6b353d5" id="r_aed5288366e051b040533a08dc6b353d5"><td class="memItemLeft" align="right" valign="top"><a id="aed5288366e051b040533a08dc6b353d5" name="aed5288366e051b040533a08dc6b353d5"></a>
+<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a>&#160;</td><td class="memItemRight" valign="bottom"><b>_validateResults</b> ()</td></tr>
+<tr class="separator:aed5288366e051b040533a08dc6b353d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -184,8 +220,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a8e87bdab4be5292ab932e4d44b9d5a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff41bebddebf3db14d9929c18efed64" id="r_acff41bebddebf3db14d9929c18efed64"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1DoFLinearSystem.html">DoFLinearSystem</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#acff41bebddebf3db14d9929c18efed64">m_linear_system</a></td></tr>
 <tr class="separator:acff41bebddebf3db14d9929c18efed64"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c759074cb79dd9762b7fd323f9667c4" id="r_a8c759074cb79dd9762b7fd323f9667c4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">IItemFamily</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#a8c759074cb79dd9762b7fd323f9667c4">m_dof_family</a> = <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">nullptr</a></td></tr>
-<tr class="separator:a8c759074cb79dd9762b7fd323f9667c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95edea54b2d08d57566cdaa2ff15412b" id="r_a95edea54b2d08d57566cdaa2ff15412b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">IItemFamily</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#a95edea54b2d08d57566cdaa2ff15412b">m_dof_family</a> = <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">nullptr</a></td></tr>
+<tr class="separator:a95edea54b2d08d57566cdaa2ff15412b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00832c0b5c11ef3141c547337292a8b3" id="r_a00832c0b5c11ef3141c547337292a8b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1FemDoFsOnNodes.html">FemDoFsOnNodes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#a00832c0b5c11ef3141c547337292a8b3">m_dofs_on_nodes</a></td></tr>
 <tr class="separator:a00832c0b5c11ef3141c547337292a8b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fc66388d0b582c3298928d6c68beaaa" id="r_a2fc66388d0b582c3298928d6c68beaaa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">Real</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#a2fc66388d0b582c3298928d6c68beaaa">f</a></td></tr>
@@ -202,6 +238,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a0113e844fdd697fc12e00731360dbf79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adeb86ec8f3d53f50f7b0a0a110550afa" id="r_adeb86ec8f3d53f50f7b0a0a110550afa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">bool</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#adeb86ec8f3d53f50f7b0a0a110550afa">m_hex_quad_mesh</a> = <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">false</a></td></tr>
 <tr class="separator:adeb86ec8f3d53f50f7b0a0a110550afa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a2a4bc6ea05da1fa3d4d3a4d0f6b09" id="r_a70a2a4bc6ea05da1fa3d4d3a4d0f6b09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1FemDoFsOnCells.html">FemDoFsOnCells</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#a70a2a4bc6ea05da1fa3d4d3a4d0f6b09">m_dofs_on_cells</a></td></tr>
+<tr class="separator:a70a2a4bc6ea05da1fa3d4d3a4d0f6b09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34997d40eecf93e89d6e805fca68b9fa" id="r_a34997d40eecf93e89d6e805fca68b9fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1CsrFormat.html">CsrFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#a34997d40eecf93e89d6e805fca68b9fa">m_csr_matrix</a></td></tr>
+<tr class="separator:a34997d40eecf93e89d6e805fca68b9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58e8d258c3f2c0d67ad37cbac4e1b92" id="r_ae58e8d258c3f2c0d67ad37cbac4e1b92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">IndexedCellCellConnectivityView</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFemModulePoisson.html#ae58e8d258c3f2c0d67ad37cbac4e1b92">m_cell_cell_connectivity_view</a></td></tr>
+<tr class="separator:ae58e8d258c3f2c0d67ad37cbac4e1b92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A module for finite element method. </p>
@@ -210,7 +252,7 @@ Private Attributes</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8h_source.html#l00064">64</a> of file <a class="el" href="poisson_2FemModule_8h_source.html">poisson/FemModule.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a3b47a74e62789d580da2a80fd4c44977" name="a3b47a74e62789d580da2a80fd4c44977"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b47a74e62789d580da2a80fd4c44977">&#9670;&#160;</a></span>FemModulePoisson()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b47a74e62789d580da2a80fd4c44977">&#9670;&#160;</a></span>FemModulePoisson() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -234,6 +276,34 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8h_source.html#l00069">69</a> of file <a class="el" href="poisson_2FemModule_8h_source.html">poisson/FemModule.h</a>.</p>
+
+</div>
+</div>
+<a id="a3b47a74e62789d580da2a80fd4c44977" name="a3b47a74e62789d580da2a80fd4c44977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b47a74e62789d580da2a80fd4c44977">&#9670;&#160;</a></span>FemModulePoisson() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">FemModulePoisson::FemModulePoisson </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">const</a> <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">ModuleBuildInfo</a> &amp;&#160;</td>
+          <td class="paramname"><em>mbi</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="poisson__dg_2FemModule_8h_source.html#l00070">70</a> of file <a class="el" href="poisson__dg_2FemModule_8h_source.html">poisson_dg/FemModule.h</a>.</p>
 
 </div>
 </div>
@@ -271,9 +341,9 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 <li>Assembles global matrix by adding contributions from each cell's element matrix to the corresponding entries in the global matrix. </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00363">363</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00364">364</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="DoFLinearSystem_8cc_source.html#l00380">Arcane::FemUtils::DoFLinearSystem::matrixAddValue()</a>.</p>
+<p class="reference">References <a class="el" href="DoFLinearSystem_8cc_source.html#l00400">Arcane::FemUtils::DoFLinearSystem::matrixAddValue()</a>.</p>
 
 </div>
 </div>
@@ -294,11 +364,11 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 
 <p>Calls the right function for LHS assembly given as mesh type. </p>
 
-<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00297">297</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00298">298</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
 <p class="reference">References <a class="el" href="poisson_2ElementMatrixHexQuad_8h_source.html#l00086">_computeElementMatrixHexa8()</a>, <a class="el" href="poisson_2ElementMatrixHexQuad_8h_source.html#l00033">_computeElementMatrixQuad4()</a>, <a class="el" href="poisson_2ElementMatrix_8h_source.html#l00079">_computeElementMatrixTetra4()</a>, <a class="el" href="poisson_2ElementMatrix_8h_source.html#l00028">_computeElementMatrixTria3()</a>, <a class="el" href="BSRFormat_8h_source.html#l00392">Arcane::FemUtils::BSRFormat::assembleBilinearAtomic()</a>, <a class="el" href="BSRFormat_8h_source.html#l00556">Arcane::FemUtils::BSRFormat::assembleBilinearAtomicFree()</a>, and <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00110">_doStationarySolve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00111">_doStationarySolve()</a>.</p>
 
 </div>
 </div>
@@ -331,11 +401,11 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 <li>CPU or GPU execution: Calls <a class="el" href="classFemModulePoisson.html#af8de4df6526ea1669d0bf2797e53176b" title="FEM linear operator for the current simulation step. GPU compatible. Currently working with HypreDoFL...">_assembleLinearOperatorGpu()</a>. </li>
 </ul>
 
-<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00159">159</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00160">160</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="poisson_2FemModule_8cc_source.html#l00238">_assembleLinearOperatorCpu()</a>, and <a class="el" href="poisson_2FemModule_8cc_source.html#l00183">_assembleLinearOperatorGpu()</a>.</p>
+<p class="reference">References <a class="el" href="poisson_2FemModule_8cc_source.html#l00239">_assembleLinearOperatorCpu()</a>, and <a class="el" href="poisson_2FemModule_8cc_source.html#l00184">_assembleLinearOperatorGpu()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00110">_doStationarySolve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00111">_doStationarySolve()</a>.</p>
 
 </div>
 </div>
@@ -370,11 +440,11 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 <li>If Dirichlet BC/Point are specified apply to the LHS &amp; RHS. </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00238">238</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00239">239</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l01425">ArcaneFemFunctions::BoundaryConditions3D::applyConstantSourceToRhs()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l02301">ArcaneFemFunctions::BoundaryConditions2D::applyConstantSourceToRhs()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l01252">ArcaneFemFunctions::BoundaryConditions::applyDirichletToLhsAndRhs()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l01737">ArcaneFemFunctions::BoundaryConditions3D::applyNeumannToRhs()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l02561">ArcaneFemFunctions::BoundaryConditions2D::applyNeumannToRhs()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l01293">ArcaneFemFunctions::BoundaryConditions::applyPointDirichletToLhsAndRhs()</a>, <a class="el" href="FemUtils_8h_source.html#l00121">Arcane::FemUtils::RealMatrix&lt; N, M &gt;::fill()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>, and <a class="el" href="DoFLinearSystem_8cc_source.html#l00489">Arcane::FemUtils::DoFLinearSystem::rhsVariable()</a>.</p>
+<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l01481">ArcaneFemFunctions::BoundaryConditions3D::applyConstantSourceToRhs()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l02357">ArcaneFemFunctions::BoundaryConditions2D::applyConstantSourceToRhs()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l01308">ArcaneFemFunctions::BoundaryConditions::applyDirichletToLhsAndRhs()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l01793">ArcaneFemFunctions::BoundaryConditions3D::applyNeumannToRhs()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l02617">ArcaneFemFunctions::BoundaryConditions2D::applyNeumannToRhs()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l01349">ArcaneFemFunctions::BoundaryConditions::applyPointDirichletToLhsAndRhs()</a>, <a class="el" href="FemUtils_8h_source.html#l00121">Arcane::FemUtils::RealMatrix&lt; N, M &gt;::fill()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>, and <a class="el" href="DoFLinearSystem_8cc_source.html#l00509">Arcane::FemUtils::DoFLinearSystem::rhsVariable()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00159">_assembleLinearOperator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00160">_assembleLinearOperator()</a>.</p>
 
 </div>
 </div>
@@ -401,11 +471,73 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 <li>If Dirichlet BC/Point are specified apply to the LHS &amp; RHS. </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00183">183</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00184">184</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="classArcane_1_1FemUtils_1_1Gpu_1_1BoundaryConditions.html#ad34d6724765c7d82e23615449f617cb4">Arcane::FemUtils::Gpu::BoundaryConditions::applyDirichletToLhsAndRhs()</a>, <a class="el" href="ArcaneFemFunctionsGpu_8cc_source.html#l00158">Arcane::FemUtils::Gpu::BoundaryConditions::applyPointDirichletToLhsAndRhs()</a>, <a class="el" href="FemUtils_8h_source.html#l00121">Arcane::FemUtils::RealMatrix&lt; N, M &gt;::fill()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>, and <a class="el" href="DoFLinearSystem_8cc_source.html#l00489">Arcane::FemUtils::DoFLinearSystem::rhsVariable()</a>.</p>
+<p class="reference">References <a class="el" href="classArcane_1_1FemUtils_1_1Gpu_1_1BoundaryConditions.html#ad34d6724765c7d82e23615449f617cb4">Arcane::FemUtils::Gpu::BoundaryConditions::applyDirichletToLhsAndRhs()</a>, <a class="el" href="ArcaneFemFunctionsGpu_8cc_source.html#l00158">Arcane::FemUtils::Gpu::BoundaryConditions::applyPointDirichletToLhsAndRhs()</a>, <a class="el" href="FemUtils_8h_source.html#l00121">Arcane::FemUtils::RealMatrix&lt; N, M &gt;::fill()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>, and <a class="el" href="DoFLinearSystem_8cc_source.html#l00509">Arcane::FemUtils::DoFLinearSystem::rhsVariable()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00159">_assembleLinearOperator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00160">_assembleLinearOperator()</a>.</p>
+
+</div>
+</div>
+<a id="add7a1ed3aa237642211f38af72e75652" name="add7a1ed3aa237642211f38af72e75652"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add7a1ed3aa237642211f38af72e75652">&#9670;&#160;</a></span>_assembleLinearSystem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a> FemModulePoisson::_assembleLinearSystem </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assembles the FEM linear system (matrix and RHS) for the Poisson problem using DG formulation. </p>
+
+<p class="definition">Definition at line <a class="el" href="poisson__dg_2FemModule_8cc_source.html#l00161">161</a> of file <a class="el" href="poisson__dg_2FemModule_8cc_source.html">poisson_dg/FemModule.cc</a>.</p>
+
+<p class="reference">References <a class="el" href="poisson__dg_2FemModule_8cc_source.html#l00417">_buildCsrSparsity()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00124">ArcaneFemFunctions::MeshOperation::computeAreaPolygon2D()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00300">ArcaneFemFunctions::MeshOperation::computeCentroid()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00372">ArcaneFemFunctions::MeshOperation::computeLengthEdge2()</a>, <a class="el" href="FemUtils_8h_source.html#l00121">Arcane::FemUtils::RealMatrix&lt; N, M &gt;::fill()</a>, <a class="el" href="CsrFormatMatrix_8h_source.html#l00058">Arcane::FemUtils::CsrFormat::matrixAddValue()</a>, <a class="el" href="DoFLinearSystem_8cc_source.html#l00400">Arcane::FemUtils::DoFLinearSystem::matrixAddValue()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>, <a class="el" href="DoFLinearSystem_8cc_source.html#l00509">Arcane::FemUtils::DoFLinearSystem::rhsVariable()</a>, and <a class="el" href="CsrFormatMatrix_8cc_source.html#l00064">Arcane::FemUtils::CsrFormat::translateToLinearSystem()</a>.</p>
+
+</div>
+</div>
+<a id="aad70ee380daa996ef87ae7bdd2fa33d7" name="aad70ee380daa996ef87ae7bdd2fa33d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad70ee380daa996ef87ae7bdd2fa33d7">&#9670;&#160;</a></span>_buildCsrSparsity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">void</a> FemModulePoisson::_buildCsrSparsity </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Builds the CSR sparsity pattern for the DG matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="poisson__dg_2FemModule_8cc_source.html#l00416">416</a> of file <a class="el" href="poisson__dg_2FemModule_8cc_source.html">poisson_dg/FemModule.cc</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="poisson__dg_2FemModule_8cc_source.html#l00162">_assembleLinearSystem()</a>.</p>
 
 </div>
 </div>
@@ -451,9 +583,9 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 
 <p class="definition">Definition at line <a class="el" href="poisson_2ElementMatrixHexQuad_8h_source.html#l00086">86</a> of file <a class="el" href="poisson_2ElementMatrixHexQuad_8h_source.html">poisson/ElementMatrixHexQuad.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l00988">ArcaneFemFunctions::FeOperation3D::computeGradientsAndJacobianHexa8()</a>, and <a class="el" href="FemUtils_8h_source.html#l00121">Arcane::FemUtils::RealMatrix&lt; N, M &gt;::fill()</a>.</p>
+<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l01044">ArcaneFemFunctions::FeOperation3D::computeGradientsAndJacobianHexa8()</a>, and <a class="el" href="FemUtils_8h_source.html#l00121">Arcane::FemUtils::RealMatrix&lt; N, M &gt;::fill()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00298">_assembleBilinearOperator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00299">_assembleBilinearOperator()</a>.</p>
 
 </div>
 </div>
@@ -499,9 +631,9 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 
 <p class="definition">Definition at line <a class="el" href="poisson_2ElementMatrixHexQuad_8h_source.html#l00033">33</a> of file <a class="el" href="poisson_2ElementMatrixHexQuad_8h_source.html">poisson/ElementMatrixHexQuad.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l00652">ArcaneFemFunctions::FeOperation2D::computeGradientsAndJacobianQuad4()</a>, and <a class="el" href="FemUtils_8h_source.html#l00121">Arcane::FemUtils::RealMatrix&lt; N, M &gt;::fill()</a>.</p>
+<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l00708">ArcaneFemFunctions::FeOperation2D::computeGradientsAndJacobianQuad4()</a>, and <a class="el" href="FemUtils_8h_source.html#l00121">Arcane::FemUtils::RealMatrix&lt; N, M &gt;::fill()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00298">_assembleBilinearOperator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00299">_assembleBilinearOperator()</a>.</p>
 
 </div>
 </div>
@@ -539,9 +671,9 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 
 <p class="definition">Definition at line <a class="el" href="poisson_2ElementMatrix_8h_source.html#l00079">79</a> of file <a class="el" href="poisson_2ElementMatrix_8h_source.html">poisson/ElementMatrix.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l00807">ArcaneFemFunctions::FeOperation3D::computeGradientXTetra4()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00852">ArcaneFemFunctions::FeOperation3D::computeGradientYTetra4()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00897">ArcaneFemFunctions::FeOperation3D::computeGradientZTetra4()</a>, and <a class="el" href="ArcaneFemFunctions_8h_source.html#l00128">ArcaneFemFunctions::MeshOperation::computeVolumeTetra4()</a>.</p>
+<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l00863">ArcaneFemFunctions::FeOperation3D::computeGradientXTetra4()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00908">ArcaneFemFunctions::FeOperation3D::computeGradientYTetra4()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00953">ArcaneFemFunctions::FeOperation3D::computeGradientZTetra4()</a>, and <a class="el" href="ArcaneFemFunctions_8h_source.html#l00153">ArcaneFemFunctions::MeshOperation::computeVolumeTetra4()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00298">_assembleBilinearOperator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00299">_assembleBilinearOperator()</a>.</p>
 
 </div>
 </div>
@@ -579,9 +711,9 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 
 <p class="definition">Definition at line <a class="el" href="poisson_2ElementMatrix_8h_source.html#l00028">28</a> of file <a class="el" href="poisson_2ElementMatrix_8h_source.html">poisson/ElementMatrix.h</a>.</p>
 
-<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l00152">ArcaneFemFunctions::MeshOperation::computeAreaTria3()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00589">ArcaneFemFunctions::FeOperation2D::computeGradientXTria3()</a>, and <a class="el" href="ArcaneFemFunctions_8h_source.html#l00614">ArcaneFemFunctions::FeOperation2D::computeGradientYTria3()</a>.</p>
+<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l00177">ArcaneFemFunctions::MeshOperation::computeAreaTria3()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00645">ArcaneFemFunctions::FeOperation2D::computeGradientXTria3()</a>, and <a class="el" href="ArcaneFemFunctions_8h_source.html#l00670">ArcaneFemFunctions::FeOperation2D::computeGradientYTria3()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00298">_assembleBilinearOperator()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00299">_assembleBilinearOperator()</a>.</p>
 
 </div>
 </div>
@@ -616,12 +748,20 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 <li><a class="el" href="classFemModulePoisson.html#aad155665603bf46f0deab5d31e061a4f" title="Assembles the FEM linear operator for the current simulation step.">_assembleLinearOperator()</a> Assembles the FEM RHS vector b</li>
 <li><a class="el" href="classFemModulePoisson.html#a51a7230e28544650e1f581298d47b7c9" title="Solves the linear system.">_solve()</a> Solves for solution vector u = A^-1*b</li>
 <li><a class="el" href="classFemModulePoisson.html#addc60439215377f53c82ea72d934942f" title="Update the FEM variables.">_updateVariables()</a> Updates FEM variables u = x</li>
+<li><a class="el" href="classFemModulePoisson.html#aed5288366e051b040533a08dc6b353d5" title="Validates and prints the results of the FEM computation.">_validateResults()</a> Regression test</li>
+</ol>
+<p>This method follows a sequence of steps to solve FEM system:</p>
+<ol type="1">
+<li><a class="el" href="classFemModulePoisson.html#ae4e499907c3e8f091916b43813f1da68" title="Retrieves and sets the material parameters for the simulation.">_getMaterialParameters()</a> Retrieves material parameters via</li>
+<li><a class="el" href="classFemModulePoisson.html#add7a1ed3aa237642211f38af72e75652" title="Assembles the FEM linear system (matrix and RHS) for the Poisson problem using DG formulation.">_assembleLinearSystem()</a> Assembles the FEM matrix A RHS vector b</li>
+<li><a class="el" href="classFemModulePoisson.html#a51a7230e28544650e1f581298d47b7c9" title="Solves the linear system.">_solve()</a> Solves for solution vector u = A^-1*b</li>
+<li><a class="el" href="classFemModulePoisson.html#addc60439215377f53c82ea72d934942f" title="Update the FEM variables.">_updateVariables()</a> Updates FEM variables u = x</li>
 <li><a class="el" href="classFemModulePoisson.html#aed5288366e051b040533a08dc6b353d5" title="Validates and prints the results of the FEM computation.">_validateResults()</a> Regression test </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00109">109</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00110">110</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="poisson_2FemModule_8cc_source.html#l00298">_assembleBilinearOperator()</a>, <a class="el" href="poisson_2FemModule_8cc_source.html#l00159">_assembleLinearOperator()</a>, <a class="el" href="poisson_2FemModule_8cc_source.html#l00136">_getMaterialParameters()</a>, <a class="el" href="poisson_2FemModule_8cc_source.html#l00394">_solve()</a>, <a class="el" href="poisson_2FemModule_8cc_source.html#l00417">_updateVariables()</a>, and <a class="el" href="poisson_2FemModule_8cc_source.html#l00451">_validateResults()</a>.</p>
+<p class="reference">References <a class="el" href="poisson_2FemModule_8cc_source.html#l00299">_assembleBilinearOperator()</a>, <a class="el" href="poisson_2FemModule_8cc_source.html#l00160">_assembleLinearOperator()</a>, <a class="el" href="poisson_2FemModule_8cc_source.html#l00137">_getMaterialParameters()</a>, <a class="el" href="poisson_2FemModule_8cc_source.html#l00395">_solve()</a>, <a class="el" href="poisson_2FemModule_8cc_source.html#l00418">_updateVariables()</a>, and <a class="el" href="poisson_2FemModule_8cc_source.html#l00452">_validateResults()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00058">compute()</a>.</p>
 
@@ -652,11 +792,11 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 
 <p>Retrieves and sets the material parameters for the simulation. </p>
 
-<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00135">135</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00136">136</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
 <p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00110">_doStationarySolve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00111">_doStationarySolve()</a>.</p>
 
 </div>
 </div>
@@ -685,11 +825,11 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 
 <p>Solves the linear system. </p>
 
-<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00393">393</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00394">394</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="DoFLinearSystem_8cc_source.html#l00468">Arcane::FemUtils::DoFLinearSystem::applyLinearSystemTransformationAndSolve()</a>, and <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>.</p>
+<p class="reference">References <a class="el" href="DoFLinearSystem_8cc_source.html#l00488">Arcane::FemUtils::DoFLinearSystem::applyLinearSystemTransformationAndSolve()</a>, and <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00110">_doStationarySolve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00111">_doStationarySolve()</a>.</p>
 
 </div>
 </div>
@@ -719,14 +859,18 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 <p>Update the FEM variables. </p>
 <p>This method performs the following actions:</p><ol type="1">
 <li>Fetches values of solution from solved linear system to FEM variables, i.e., it copies RHS DOF to u.</li>
+<li>Performs synchronize of FEM variables across subdomains.</li>
+</ol>
+<p>This method performs the following actions:</p><ol type="1">
+<li>Fetches values of solution from solved linear system to FEM variables.</li>
 <li>Performs synchronize of FEM variables across subdomains. </li>
 </ol>
 
-<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00416">416</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00417">417</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>, and <a class="el" href="DoFLinearSystem_8cc_source.html#l00479">Arcane::FemUtils::DoFLinearSystem::solutionVariable()</a>.</p>
+<p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>, and <a class="el" href="DoFLinearSystem_8cc_source.html#l00499">Arcane::FemUtils::DoFLinearSystem::solutionVariable()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00110">_doStationarySolve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00111">_doStationarySolve()</a>.</p>
 
 </div>
 </div>
@@ -761,11 +905,11 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 </ol>
 <dl class="section note"><dt>Note</dt><dd>The result comparison uses a tolerance of 1.0e-4. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00450">450</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
+<p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00451">451</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
 <p class="reference">References <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00110">_doStationarySolve()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="poisson_2FemModule_8cc_source.html#l00111">_doStationarySolve()</a>.</p>
 
 </div>
 </div>
@@ -802,7 +946,7 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 
 <p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00057">57</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
-<p class="reference">References <a class="el" href="poisson_2FemModule_8cc_source.html#l00110">_doStationarySolve()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00087">ArcaneFemFunctions::GeneralFunctions::getPetscFlagsFromCommandline()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>, <a class="el" href="DoFLinearSystem_8cc_source.html#l00576">Arcane::FemUtils::DoFLinearSystem::reset()</a>, and <a class="el" href="DoFLinearSystem_8h_source.html#l00298">Arcane::FemUtils::DoFLinearSystem::setLinearSystemFactory()</a>.</p>
+<p class="reference">References <a class="el" href="poisson_2FemModule_8cc_source.html#l00111">_doStationarySolve()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00087">ArcaneFemFunctions::GeneralFunctions::getPetscFlagsFromCommandline()</a>, <a class="el" href="ArcaneFemFunctions_8h_source.html#l00065">ArcaneFemFunctions::GeneralFunctions::printArcaneFemTime()</a>, <a class="el" href="DoFLinearSystem_8cc_source.html#l00596">Arcane::FemUtils::DoFLinearSystem::reset()</a>, and <a class="el" href="DoFLinearSystem_8h_source.html#l00298">Arcane::FemUtils::DoFLinearSystem::setLinearSystemFactory()</a>.</p>
 
 </div>
 </div>
@@ -830,7 +974,12 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 </div><div class="memdoc">
 
 <p>Initializes the <a class="el" href="classFemModulePoisson.html" title="A module for finite element method.">FemModulePoisson</a> at the start of the simulation. </p>
-<p>This method initializes degrees of freedom (DoFs) on nodes. </p>
+<p>This method initializes degrees of freedom (DoFs) on nodes.</p>
+<p>This method is run at the beginning of simulation and performs the following tasks:</p><ol type="1">
+<li>Initializes the DoF connectivity for P1 DG elements (3 per cell).</li>
+<li>Reads configuration options for matrix format, assembly, solving, and validation.</li>
+<li>Builds cell-cell connectivity if using CSR format. </li>
+</ol>
 
 <p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8cc_source.html#l00026">26</a> of file <a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a>.</p>
 
@@ -839,7 +988,7 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 </div>
 </div>
 <a id="a12c55266b56ae5ed563c88e13ce6e870" name="a12c55266b56ae5ed563c88e13ce6e870"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a12c55266b56ae5ed563c88e13ce6e870">&#9670;&#160;</a></span>versionInfo()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c55266b56ae5ed563c88e13ce6e870">&#9670;&#160;</a></span>versionInfo() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -864,6 +1013,35 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 <p>Method called at each iteration. </p>
 
 <p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8h_source.html#l00081">81</a> of file <a class="el" href="poisson_2FemModule_8h_source.html">poisson/FemModule.h</a>.</p>
+
+</div>
+</div>
+<a id="a12c55266b56ae5ed563c88e13ce6e870" name="a12c55266b56ae5ed563c88e13ce6e870"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c55266b56ae5ed563c88e13ce6e870">&#9670;&#160;</a></span>versionInfo() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">VersionInfo</a> FemModulePoisson::versionInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Method called at each iteration. </p>
+
+<p class="definition">Definition at line <a class="el" href="poisson__dg_2FemModule_8h_source.html#l00082">82</a> of file <a class="el" href="poisson__dg_2FemModule_8h_source.html">poisson_dg/FemModule.h</a>.</p>
 
 </div>
 </div>
@@ -940,6 +1118,30 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 
 </div>
 </div>
+<a id="ae58e8d258c3f2c0d67ad37cbac4e1b92" name="ae58e8d258c3f2c0d67ad37cbac4e1b92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58e8d258c3f2c0d67ad37cbac4e1b92">&#9670;&#160;</a></span>m_cell_cell_connectivity_view</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">IndexedCellCellConnectivityView</a> FemModulePoisson::m_cell_cell_connectivity_view</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="poisson__dg_2FemModule_8h_source.html#l00098">98</a> of file <a class="el" href="poisson__dg_2FemModule_8h_source.html">poisson_dg/FemModule.h</a>.</p>
+
+</div>
+</div>
 <a id="a0113e844fdd697fc12e00731360dbf79" name="a0113e844fdd697fc12e00731360dbf79"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0113e844fdd697fc12e00731360dbf79">&#9670;&#160;</a></span>m_cross_validation</h2>
 
@@ -964,8 +1166,8 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 
 </div>
 </div>
-<a id="a8c759074cb79dd9762b7fd323f9667c4" name="a8c759074cb79dd9762b7fd323f9667c4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c759074cb79dd9762b7fd323f9667c4">&#9670;&#160;</a></span>m_dof_family</h2>
+<a id="a34997d40eecf93e89d6e805fca68b9fa" name="a34997d40eecf93e89d6e805fca68b9fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34997d40eecf93e89d6e805fca68b9fa">&#9670;&#160;</a></span>m_csr_matrix</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -974,7 +1176,31 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">IItemFamily</a>* FemModulePoisson::m_dof_family = <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">nullptr</a></td>
+          <td class="memname"><a class="el" href="classArcane_1_1FemUtils_1_1CsrFormat.html">CsrFormat</a> FemModulePoisson::m_csr_matrix</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="poisson__dg_2FemModule_8h_source.html#l00091">91</a> of file <a class="el" href="poisson__dg_2FemModule_8h_source.html">poisson_dg/FemModule.h</a>.</p>
+
+</div>
+</div>
+<a id="a95edea54b2d08d57566cdaa2ff15412b" name="a95edea54b2d08d57566cdaa2ff15412b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95edea54b2d08d57566cdaa2ff15412b">&#9670;&#160;</a></span>m_dof_family</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">IItemFamily</a> * FemModulePoisson::m_dof_family = <a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">nullptr</a></td>
         </tr>
       </table>
   </td>
@@ -985,6 +1211,30 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="poisson_2FemModule_8h_source.html#l00090">90</a> of file <a class="el" href="poisson_2FemModule_8h_source.html">poisson/FemModule.h</a>.</p>
+
+</div>
+</div>
+<a id="a70a2a4bc6ea05da1fa3d4d3a4d0f6b09" name="a70a2a4bc6ea05da1fa3d4d3a4d0f6b09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70a2a4bc6ea05da1fa3d4d3a4d0f6b09">&#9670;&#160;</a></span>m_dofs_on_cells</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classArcane_1_1FemUtils_1_1FemDoFsOnCells.html">FemDoFsOnCells</a> FemModulePoisson::m_dofs_on_cells</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="poisson__dg_2FemModule_8h_source.html#l00090">90</a> of file <a class="el" href="poisson__dg_2FemModule_8h_source.html">poisson_dg/FemModule.h</a>.</p>
 
 </div>
 </div>
@@ -1134,9 +1384,11 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="poisson_2FemModule_8h_source.html">poisson/FemModule.h</a></li>
+<li><a class="el" href="poisson__dg_2FemModule_8h_source.html">poisson_dg/FemModule.h</a></li>
 <li><a class="el" href="poisson_2ElementMatrix_8h_source.html">poisson/ElementMatrix.h</a></li>
 <li><a class="el" href="poisson_2ElementMatrixHexQuad_8h_source.html">poisson/ElementMatrixHexQuad.h</a></li>
 <li><a class="el" href="poisson_2FemModule_8cc_source.html">poisson/FemModule.cc</a></li>
+<li><a class="el" href="poisson__dg_2FemModule_8cc_source.html">poisson_dg/FemModule.cc</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
@@ -1144,7 +1396,7 @@ template&lt;<a class="el" href="classArcane_1_1FemUtils_1_1RealMatrix.html">int<
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="classFemModulePoisson.html">FemModulePoisson</a></li>
-    <li class="footer">Generated on Mon Dec 22 2025 13:32:35 for ArcaneFem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 13 2026 23:37:09 for ArcaneFem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

@@ -114,12 +114,12 @@ $(document).ready(function(){initNavTree('FemDoFsOnNodes_8cc_source.html',''); i
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// -*- tab-width: 2; indent-tabs-mode: nil; coding: utf-8-with-signature -*-</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright 2000-2025 CEA (www.cea.fr) IFPEN (www.ifpenergiesnouvelles.com)</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright 2000-2026 CEA (www.cea.fr) IFPEN (www.ifpenergiesnouvelles.com)</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// See the top-level COPYRIGHT file for details.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// SPDX-License-Identifier: Apache-2.0</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/*---------------------------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/* FemDoFsOnNodes.cc                                           (C) 2022-2025 */</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/* FemDoFsOnNodes.cc                                           (C) 2000-2026 */</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*                                                                           */</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="comment">/* Utilitary classes for FEM.                                                */</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="comment">/*---------------------------------------------------------------------------*/</span></div>
@@ -195,14 +195,14 @@ $(document).ready(function(){initNavTree('FemDoFsOnNodes_8cc_source.html',''); i
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  Int64UniqueArray uids(mesh-&gt;allNodes().size() * nb_dof_per_node);</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  {</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    Integer dof_index = 0;</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    UniqueArray&lt;Int64&gt; hash_maker({0,0});</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    ENUMERATE_NODE (inode, mesh-&gt;allNodes()) {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      Node node = *inode;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      Int64 node_unique_id = node.uniqueId().asInt64();</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      hash_maker[0] = node_unique_id;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      <span class="keywordflow">for</span> (Integer i = 0; i &lt; nb_dof_per_node; ++i) {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        hash_maker[1] = i;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        uids[dof_index] = MeshUtils::generateHashUniqueId(hash_maker.constView());</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// Use a mask to make sure the uniqueId() of the dof</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="comment">// can not be negative if we multiply the uniqueId().</span></div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">const</span> UInt64 uid_mask = (1&lt;&lt;28) - 1;</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    ENUMERATE_NODE (inode, mesh-&gt;allNodes()) {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      Node node = *inode;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      Int64 node_unique_id = node.uniqueId().asInt64();</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      <span class="keywordflow">for</span> (Integer i = 0; i &lt; nb_dof_per_node; ++i) {</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        uids[dof_index] = (node_unique_id &amp; uid_mask) * nb_dof_per_node + i;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        ++dof_index;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      }</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
@@ -290,7 +290,7 @@ $(document).ready(function(){initNavTree('FemDoFsOnNodes_8cc_source.html',''); i
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08ffedf724afbac6d71820efebe4ff33.html">femutils</a></li><li class="navelem"><b>FemDoFsOnNodes.cc</b></li>
-    <li class="footer">Generated on Mon Dec 22 2025 13:32:35 for ArcaneFem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 13 2026 23:37:09 for ArcaneFem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

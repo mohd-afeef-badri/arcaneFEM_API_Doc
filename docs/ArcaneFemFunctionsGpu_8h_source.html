@@ -114,12 +114,12 @@ $(document).ready(function(){initNavTree('ArcaneFemFunctionsGpu_8h_source.html',
 <div class="contents">
 <div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// -*- tab-width: 2; indent-tabs-mode: nil; coding: utf-8-with-signature -*-</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright 2000-2025 CEA (www.cea.fr) IFPEN (www.ifpenergiesnouvelles.com)</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// Copyright 2000-2026 CEA (www.cea.fr) IFPEN (www.ifpenergiesnouvelles.com)</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// See the top-level COPYRIGHT file for details.</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="comment">// SPDX-License-Identifier: Apache-2.0</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment">//-----------------------------------------------------------------------------</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">/*---------------------------------------------------------------------------*/</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/* ArcaneFemFunctionsGpu.h                                     (C) 2022-2025 */</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="comment">/* ArcaneFemFunctionsGpu.h                                     (C) 2000-2026 */</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="comment">/*---------------------------------------------------------------------------*/</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#ifndef ARCANEFEM_FEMTUILS_ARCANEFEMFUNCTIONSGPU_H</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#define ARCANEFEM_FEMTUILS_ARCANEFEMFUNCTIONSGPU_H</span></div>
@@ -443,7 +443,7 @@ $(document).ready(function(){initNavTree('ArcaneFemFunctionsGpu_8h_source.html',
 <div class="line"><a id="l00329" name="l00329"></a><span class="lineno">  329</span>  Real3 v2 = n3 - n0;</div>
 <div class="line"><a id="l00330" name="l00330"></a><span class="lineno">  330</span> </div>
 <div class="line"><a id="l00331" name="l00331"></a><span class="lineno">  331</span>  <span class="comment">// 6 x Volume of tetrahedron</span></div>
-<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  Real V6 = std::abs(Arcane::math::dot(v0, Arcane::math::cross(v1, v2)));</div>
+<div class="line"><a id="l00332" name="l00332"></a><span class="lineno">  332</span>  Real V6 = math::abs(math::dot(v0, math::cross(v1, v2)));</div>
 <div class="line"><a id="l00333" name="l00333"></a><span class="lineno">  333</span> </div>
 <div class="line"><a id="l00334" name="l00334"></a><span class="lineno">  334</span>  <a class="code hl_struct" href="structReal4.html">Real4</a> dx{};</div>
 <div class="line"><a id="l00335" name="l00335"></a><span class="lineno">  335</span> </div>
@@ -491,7 +491,7 @@ $(document).ready(function(){initNavTree('ArcaneFemFunctionsGpu_8h_source.html',
 <div class="line"><a id="l00377" name="l00377"></a><span class="lineno">  377</span>  Real3 v2 = n3 - n0;</div>
 <div class="line"><a id="l00378" name="l00378"></a><span class="lineno">  378</span> </div>
 <div class="line"><a id="l00379" name="l00379"></a><span class="lineno">  379</span>  <span class="comment">// 6 x Volume of tetrahedron</span></div>
-<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>  Real V6 = std::abs(Arcane::math::dot(v0, Arcane::math::cross(v1, v2)));</div>
+<div class="line"><a id="l00380" name="l00380"></a><span class="lineno">  380</span>  Real V6 = math::abs(math::dot(v0, math::cross(v1, v2)));</div>
 <div class="line"><a id="l00381" name="l00381"></a><span class="lineno">  381</span> </div>
 <div class="line"><a id="l00382" name="l00382"></a><span class="lineno">  382</span>  <a class="code hl_struct" href="structReal4.html">Real4</a> dy{};</div>
 <div class="line"><a id="l00383" name="l00383"></a><span class="lineno">  383</span> </div>
@@ -539,7 +539,7 @@ $(document).ready(function(){initNavTree('ArcaneFemFunctionsGpu_8h_source.html',
 <div class="line"><a id="l00425" name="l00425"></a><span class="lineno">  425</span>  <span class="keyword">auto</span> v2 = n3 - n0;</div>
 <div class="line"><a id="l00426" name="l00426"></a><span class="lineno">  426</span> </div>
 <div class="line"><a id="l00427" name="l00427"></a><span class="lineno">  427</span>  <span class="comment">// 6 x Volume of tetrahedron</span></div>
-<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>  Real V6 = std::abs(Arcane::math::dot(v0, Arcane::math::cross(v1, v2)));</div>
+<div class="line"><a id="l00428" name="l00428"></a><span class="lineno">  428</span>  Real V6 = math::abs(math::dot(v0, math::cross(v1, v2)));</div>
 <div class="line"><a id="l00429" name="l00429"></a><span class="lineno">  429</span> </div>
 <div class="line"><a id="l00430" name="l00430"></a><span class="lineno">  430</span>  <a class="code hl_struct" href="structReal4.html">Real4</a> dz{};</div>
 <div class="line"><a id="l00431" name="l00431"></a><span class="lineno">  431</span> </div>
@@ -793,7 +793,7 @@ $(document).ready(function(){initNavTree('ArcaneFemFunctionsGpu_8h_source.html',
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_08ffedf724afbac6d71820efebe4ff33.html">femutils</a></li><li class="navelem"><b>ArcaneFemFunctionsGpu.h</b></li>
-    <li class="footer">Generated on Mon Dec 22 2025 13:32:35 for ArcaneFem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
+    <li class="footer">Generated on Wed May 13 2026 23:37:09 for ArcaneFem by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8 </li>
   </ul>
 </div>
 </body>

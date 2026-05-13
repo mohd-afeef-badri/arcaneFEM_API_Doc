@@ -4,6 +4,9 @@ var hierarchy =
     [ "ArcaneAlephDoFLinearSystemFactoryObject", null, [
       [ "Arcane::FemUtils::AlephDoFLinearSystemFactoryService", "classArcane_1_1FemUtils_1_1AlephDoFLinearSystemFactoryService.html", null ]
     ] ],
+    [ "ArcaneAlienDoFLinearSystemFactoryObject", null, [
+      [ "Arcane::FemUtils::AlienDoFLinearSystemFactoryService", "classArcane_1_1FemUtils_1_1AlienDoFLinearSystemFactoryService.html", null ]
+    ] ],
     [ "ArcaneElastodynamicObject", null, [
       [ "ElastodynamicModule", "classElastodynamicModule.html", null ]
     ] ],
@@ -19,8 +22,10 @@ var hierarchy =
       [ "FemModuleElastodynamics", "classFemModuleElastodynamics.html", null ],
       [ "FemModuleElectrostatics", "classFemModuleElectrostatics.html", null ],
       [ "FemModuleFourier", "classFemModuleFourier.html", null ],
+      [ "FemModuleFourierNL", "classFemModuleFourierNL.html", null ],
       [ "FemModuleHeat", "classFemModuleHeat.html", null ],
       [ "FemModuleLaplace", "classFemModuleLaplace.html", null ],
+      [ "FemModulePoisson", "classFemModulePoisson.html", null ],
       [ "FemModulePoisson", "classFemModulePoisson.html", null ],
       [ "FemModuleSoildynamics", "classFemModuleSoildynamics.html", null ],
       [ "FemModuleTestlab", "classFemModuleTestlab.html", null ]
@@ -31,8 +36,8 @@ var hierarchy =
     [ "ArcaneNLDynamicObject", null, [
       [ "NLDynamicModule", "classNLDynamicModule.html", null ]
     ] ],
-    [ "ArcanePETScDoFLinearSystemFactoryObject", null, [
-      [ "Arcane::FemUtils::PETScDoFLinearSystemFactoryService", "classArcane_1_1FemUtils_1_1PETScDoFLinearSystemFactoryService.html", null ]
+    [ "ArcanePetscDoFLinearSystemFactoryObject", null, [
+      [ "Arcane::FemUtils::PetscDoFLinearSystemFactoryService", "classArcane_1_1FemUtils_1_1PetscDoFLinearSystemFactoryService.html", null ]
     ] ],
     [ "ArcaneSequentialBasicDoFLinearSystemFactoryObject", null, [
       [ "Arcane::FemUtils::SequentialBasicDoFLinearSystemFactoryService", "classArcane_1_1FemUtils_1_1SequentialBasicDoFLinearSystemFactoryService.html", null ]
@@ -57,6 +62,7 @@ var hierarchy =
     [ "Arcane::FemUtils::DoFLinearSystem", "classArcane_1_1FemUtils_1_1DoFLinearSystem.html", null ],
     [ "Arcane::FemUtils::DoFLinearSystemRowColumnEliminationHelper", "classArcane_1_1FemUtils_1_1DoFLinearSystemRowColumnEliminationHelper.html", null ],
     [ "Arcane::FemUtils::DoFLinearSystemRowEliminationHelper", "classArcane_1_1FemUtils_1_1DoFLinearSystemRowEliminationHelper.html", null ],
+    [ "Arcane::FemUtils::FemDoFsOnCells", "classArcane_1_1FemUtils_1_1FemDoFsOnCells.html", null ],
     [ "Arcane::FemUtils::FemDoFsOnNodes", "classArcane_1_1FemUtils_1_1FemDoFsOnNodes.html", null ],
     [ "ArcaneFemFunctions::FemGaussQuadrature", "classArcaneFemFunctions_1_1FemGaussQuadrature.html", null ],
     [ "ArcaneFemFunctions::FemShapeMethods", "classArcaneFemFunctions_1_1FemShapeMethods.html", null ],
@@ -75,8 +81,9 @@ var hierarchy =
       [ "Arcane::FemUtils::DoFLinearSystemImplBase", "classArcane_1_1FemUtils_1_1DoFLinearSystemImplBase.html", [
         [ "Arcane::FemUtils::AlephDoFLinearSystemImpl", "classArcane_1_1FemUtils_1_1AlephDoFLinearSystemImpl.html", null ],
         [ "Arcane::FemUtils::CsrDoFLinearSystemImpl", "classArcane_1_1FemUtils_1_1CsrDoFLinearSystemImpl.html", [
+          [ "Arcane::FemUtils::AlienDoFLinearSystemImpl", "classArcane_1_1FemUtils_1_1AlienDoFLinearSystemImpl.html", null ],
           [ "Arcane::FemUtils::HypreDoFLinearSystemImpl", "classArcane_1_1FemUtils_1_1HypreDoFLinearSystemImpl.html", null ],
-          [ "Arcane::FemUtils::PETScDoFLinearSystemImpl", "classArcane_1_1FemUtils_1_1PETScDoFLinearSystemImpl.html", null ]
+          [ "Arcane::FemUtils::PetscDoFLinearSystemImpl", "classArcane_1_1FemUtils_1_1PetscDoFLinearSystemImpl.html", null ]
         ] ]
       ] ],
       [ "Arcane::FemUtils::SequentialDoFLinearSystemImpl", "classArcane_1_1FemUtils_1_1SequentialDoFLinearSystemImpl.html", null ]
@@ -122,6 +129,7 @@ var hierarchy =
       [ "Arcane::FemUtils::CooFormat", "classArcane_1_1FemUtils_1_1CooFormat.html", null ],
       [ "Arcane::FemUtils::CsrFormat", "classArcane_1_1FemUtils_1_1CsrFormat.html", null ],
       [ "Arcane::FemUtils::DoFLinearSystemImplBase", "classArcane_1_1FemUtils_1_1DoFLinearSystemImplBase.html", null ],
+      [ "Arcane::FemUtils::FemDoFsOnCells::Impl", "classArcane_1_1FemUtils_1_1FemDoFsOnCells_1_1Impl.html", null ],
       [ "Arcane::FemUtils::FemDoFsOnNodes::Impl", "classArcane_1_1FemUtils_1_1FemDoFsOnNodes_1_1Impl.html", null ],
       [ "Arcane::FemUtils::GaussDoFsOnCells::Impl", "classArcane_1_1FemUtils_1_1GaussDoFsOnCells_1_1Impl.html", null ],
       [ "Arcane::FemUtils::SequentialDoFLinearSystemImpl", "classArcane_1_1FemUtils_1_1SequentialDoFLinearSystemImpl.html", null ]

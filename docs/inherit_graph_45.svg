@@ -11,10 +11,10 @@
 <!-- Node0 -->
 <g id="Node000000" class="node">
 <title>Node0</title>
-<g id="a_Node000000"><a xlink:href="classArcaneFemFunctions_1_1FemShapeMethods.html" target="_top" xlink:title="Provides methods for various FEM&#45;related operations.">
+<g id="a_Node000000"><a xlink:href="classArcaneFemFunctions_1_1CellFEMDispatcher.html" target="_top" xlink:title="Provides methods based on the Dispatcher mechanism available in Arcane, allowing to compute FEM metho...">
 <polygon fill="white" stroke="#666666" points="110,-30 0,-30 0,0 110,0 110,-30"/>
 <text text-anchor="start" x="8" y="-18" font-family="Helvetica,sans-Serif" font-size="10.00">ArcaneFemFunctions</text>
-<text text-anchor="middle" x="55" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::FemShapeMethods</text>
+<text text-anchor="middle" x="55" y="-7" font-family="Helvetica,sans-Serif" font-size="10.00">::CellFEMDispatcher</text>
 </a>
 </g>
 </g>

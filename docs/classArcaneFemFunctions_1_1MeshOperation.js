@@ -1,9 +1,11 @@
 var classArcaneFemFunctions_1_1MeshOperation =
 [
+    [ "computeAreaPolygon2D", "classArcaneFemFunctions_1_1MeshOperation.html#accc78a4d7162e4f4bd3c4436befd7af1", null ],
     [ "computeAreaQuad4", "classArcaneFemFunctions_1_1MeshOperation.html#a9c3b3bd23f505aab48465fcf343aa35d", null ],
     [ "computeAreaTria3", "classArcaneFemFunctions_1_1MeshOperation.html#a4f8e0354f35f2ecf21239e4c939d40f7", null ],
     [ "computeBaryCenterTetra4", "classArcaneFemFunctions_1_1MeshOperation.html#a7339de6f973c41b8e78869a3ef11d804", null ],
     [ "computeBaryCenterTria3", "classArcaneFemFunctions_1_1MeshOperation.html#adc8c51dfa1afc71e4d71ca79425426a8", null ],
+    [ "computeCentroid", "classArcaneFemFunctions_1_1MeshOperation.html#a60577778d7fb6ab075059f4884b770c1", null ],
     [ "computeFacLengthOrArea", "classArcaneFemFunctions_1_1MeshOperation.html#afc6c024e6597e7f036ebc71f06ed8111", null ],
     [ "computeLengthEdge2", "classArcaneFemFunctions_1_1MeshOperation.html#a4eb21db7f0664cf957a5c34dde7ae429", null ],
     [ "computeNormalEdge2", "classArcaneFemFunctions_1_1MeshOperation.html#a7cb30071a2533688c9fe44ecc3ca74f9", null ],

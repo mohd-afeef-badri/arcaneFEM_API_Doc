@@ -2,6 +2,7 @@ var dir_08ffedf724afbac6d71820efebe4ff33 =
 [
     [ "internal", "dir_5d5e5eb3bc592b8392e477db6c3dea8d.html", "dir_5d5e5eb3bc592b8392e477db6c3dea8d" ],
     [ "AlephDoFLinearSystem.cc", "AlephDoFLinearSystem_8cc_source.html", null ],
+    [ "AlienDoFLinearSystem.cc", "AlienDoFLinearSystem_8cc_source.html", null ],
     [ "ArcaneFemFunctions.cc", "ArcaneFemFunctions_8cc_source.html", null ],
     [ "ArcaneFemFunctions.h", "ArcaneFemFunctions_8h_source.html", null ],
     [ "ArcaneFemFunctionsGpu.cc", "ArcaneFemFunctionsGpu_8cc_source.html", null ],
@@ -18,6 +19,8 @@ var dir_08ffedf724afbac6d71820efebe4ff33 =
     [ "DoFLinearSystem.h", "DoFLinearSystem_8h_source.html", null ],
     [ "DoFLinearSystemImplBase.cc", "DoFLinearSystemImplBase_8cc_source.html", null ],
     [ "FemBoundaryConditions.cc", "FemBoundaryConditions_8cc_source.html", null ],
+    [ "FemDoFsOnCells.cc", "FemDoFsOnCells_8cc_source.html", null ],
+    [ "FemDoFsOnCells.h", "FemDoFsOnCells_8h_source.html", null ],
     [ "FemDoFsOnNodes.cc", "FemDoFsOnNodes_8cc_source.html", null ],
     [ "FemDoFsOnNodes.h", "FemDoFsOnNodes_8h_source.html", null ],
     [ "FemUtils.cc", "FemUtils_8cc_source.html", null ],
@@ -31,5 +34,5 @@ var dir_08ffedf724afbac6d71820efebe4ff33 =
     [ "IDoFLinearSystemFactory.h", "IDoFLinearSystemFactory_8h_source.html", null ],
     [ "Integer3std.h", "Integer3std_8h_source.html", null ],
     [ "MeshTensorVariable.h", "MeshTensorVariable_8h_source.html", null ],
-    [ "PETScDoFLinearSystem.cc", "PETScDoFLinearSystem_8cc_source.html", null ]
+    [ "PetscDoFLinearSystem.cc", "PetscDoFLinearSystem_8cc_source.html", null ]
 ];
